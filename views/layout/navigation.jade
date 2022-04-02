@@ -1,0 +1,31 @@
+header.main-header
+	a(href='/').logo
+		span.logo-mini
+			<b>KAI</b>
+		span.logo-lg
+			img(src='/adminlte/dist/img/logo-KAI.png',alt="User image",style="width:100px;height:40px;")
+	nav(role='navigation').navbar.navbar-static-top
+		a(href='#', role='button', data-toggle='offcanvas').sidebar-toggle
+			span.sr-only Toggle Navigation
+			span.icon-bar
+			span.icon-bar
+			span.icon-bar
+		div.navbar-custom-menu
+			ul.nav.navbar-nav
+				
+				li.dropdown.user.user-menu
+					a(href='#',data-toggle='dropdown').dropdown-toggle
+						img(src='/adminlte/dist/img/user.png',alt='User Image').user-image
+						span.hidden-xs
+							| Nadya Adima
+					ul.dropdown-menu
+						li.user-header
+							img(src='/adminlte/dist/img/user.png',alt='User Image').img-circle
+							p
+								| Nadya Adima - Web Developer
+								small
+									| Member since Nov. 2012
+	
+							.pull-right
+								a(href='/logout').btn.btn-default.btn-flat
+									| Sign out
